@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block head %}
+{{ super() }}
+{% endblock head %}
+{% block content %}
+{% block main %}
+{{ super() }}
+{% endblock main %}
+<a href="{{ link }}"><img style="position:absolute; max-height:40vh; left:20%; top: 25%" src="{{ album_cover }}"></a>
+<p style="position:absolute; left:60%; top: 40%; max-width:500px">{{ description }}</p>
+{% endblock content %}
+			</div>
+		</div>
