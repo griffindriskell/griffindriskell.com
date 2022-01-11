@@ -1,0 +1,1 @@
+Antsible is a DevOps utility intended to expedite new server deployments and maintaining current server manifests. Antsible keeps a current up-to-date version of your Ansible hosts file.
