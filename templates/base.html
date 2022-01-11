@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+{% block head %}
+{% block title %}
+	<head>
+		<title>Griffin Driskell</title>
+	</head>
+{% endblock title %}
+
+{% endblock head %}
+{% block content %}
+{% block main %}
+<style>
+img { max-height:80vh;}
+.center { position:absolute; top:15%; left:30%}
+h1, h2, h3, h4, h5 { color:white; display: inline;}
+.wrapper { display:flex; width:100%; align-items:stretch;}
+#sidebar { min-width: 250px; max-width: 300px; min-height:100vh;}
+#sidebar.active { margin-left:-250px;}
+.toplinks { display: inline; padding:15px;}
+ul.no-bullets { list-style-type: none; margin:15px; padding:0;}
+a { text-decoration: none; color: white}
+li { margin-bottom: 15px}
+p { color:white; overflow-wrap:break-word; text-align:right; }
+.row { 
+</style>
+
+	<body style="background-color:black">
+		<div>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+				<h1 class="toplinks"><a href="/">Griffin Driskell</a></h1>
+			<!--div style="float:right; margin-right:15px"><a href="https://sabisimple.com">Sabi Software</a> <a href="/music">Music</a> <a href="/artwork">Artwork</a></links-->
+			</nav>	
+		</div>
+
+		<div class="wrapper">
+{% block sidebar %}	
+			<nav id="sidebar">
+			<ul class="no-bullets">
+				<li class="active" style="margin-top:100px;">
+					<h4>Software</h4>
+					<br>
+					<ul class="collapse list-unstyled no-bullets" id="softwareSubmenu">
+					    <li><a href="/sabi">Sabi</a></li>
+					    <li><a href="/capsule">Capsule</a></li>
+					    <li><a href="/lain">Lain</a></li>
+					    <li><a href="/antsible">Antsible</a></li>
+					    <li><a href="/nervOS">nervOS</a></li>
+					    <li><a href="/adm">ADM</a></li>
+					</ul>
+					<br>
+					<br>
+					<h4>Music</h4>
+					<ul class="collapse list-unstyled no-bullets" id="musicSubmenu">
+					    <li><a href="/disillusionment-ep">The Disillusionment of the Expectation of Others: The Disappointed EP</a></li>
+					    <li><a href="/hexgf-ep">Hex Girlfriend EP</a></li>
+					    <li><a href="/eagles-landing-ep">Two Shots in Eagle's Landing</a></li>
+					</ul>
+					<br>
+					<br>
+					<h4>Artwork</h4>
+					<ul class="collapse list-unstyled no-bullets" id="artSubmenu">
+					    <li><a href="/penpals">Penpals</a></li>
+					    <!--li><a href="/artwork">Other Artwork</a></li-->
+					</ul>
+					<br>
+					<br>
+					<h4>Other Projects</h4>
+					<ul class="collapse list-unstyled no-bullets" id="otherSubmenu">
+					    <li><a href="/grogblossom">Grogblossom</a></li>
+					</ul>
+										
+				</li>
+			</nav>
+{% endblock sidebar %}
+			<div id="content">
+
+
+
+			</div>
+			</div>
+			</div>
+			<!-- Close Main Content -->
+{% endblock main %}
+{% endblock content %}
